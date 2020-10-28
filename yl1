@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#See skript tervitab kasutajat
+
+nimi=$(whoami)
+
+	echo "Tere, $nimi"
+
+	echo "!"
