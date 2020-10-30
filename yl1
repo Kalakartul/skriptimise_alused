@@ -2,8 +2,12 @@
 
 #See skript tervitab kasutajat
 
-nimi=$(whoami)
+#whoami on vaja saada esitaht suureks
 
-	echo "Tere, $nimi"
+nimi=$(whoami | tr [a-z] [A-Z] | cut -c1)
+nimmi=$(whoami | cut -c2-)
+
+	echo "Tere, $nimi$nimmi"
 
 	echo "!"
+
