@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#See skript näitab tänast kuupäeva, kellaaega ja kalendrit
+
+date=$(date)
+
+kalender=$(cal)
+
+	echo "  "
+
+	echo "Today is $date"
+
+	echo "  "
+
+	echo "Calendar of $kalender"
