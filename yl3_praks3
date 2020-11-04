@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#See skript kusib kasutajalt tema ainepunktide arvu ja arvutab valja tema eeldatava ajakulu
+
+	echo "Sisestage ainepunktide arv:"
+
+read ainepunktide_arv
+
+	echo "Sisestage nädalate arv:"
+
+read nadalate_arv
+
+aeg= echo "$ainepunktide_arv/10 | bc"
+
+	echo "$aeg"
+
+#Ei saa seda scripti tööle, lähen järgmise ülesande juurde ja jätkan hiljem
