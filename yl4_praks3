@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#See skript aitab bussijuhtidel vaadata mitu inimest- ja mitu vaba kohta on bussis
+#ja ka seda, mitut bussi läheb vaja, juhul kui bussis on istekohti liiga vähe
+
+	echo "Mitu inimest sisenes bussi?"
+
+read bussis
+
+	echo "Mitu istekohta on bussis?"
+
+read istekohad
+
+bussid=$(($bussis / $istekohad))
+
+ylejaanud=$(($bussis % $istekohad))
+
+if test $ylejaanud -gt 0
+
+then
+
+bussid=$(($bussid + 1))
+
+fi
+	echo "Kokku on vaja $bussid bussi"
