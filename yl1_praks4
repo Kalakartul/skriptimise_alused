@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#See skript näitab, kas arv on paaris või paaritu
+
+read -p "Sisesta suvaline täisarv: " num
+
+if [ $((num%2)) -eq 0 ]
+
+then
+
+	 echo "Sisestatud arv on paaris"
+
+else
+
+	 echo "Sisestatud arv on paaritu"
+
+fi
