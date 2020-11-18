@@ -19,4 +19,8 @@ elif test $kell -ge 22 -a $kell -le 24 -o $kell -ge 0 -a $kell -lt 6 ; then
 
 	echo "Head ööd!"
 
+else
+
+	echo "Sellist kellaaega ei ole olemas"
+
 fi
