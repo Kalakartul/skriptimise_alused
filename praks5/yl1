@@ -1,0 +1,29 @@
+#!/bin/bash
+#See skript näitab mis vanuseeas skripti kasutaja on
+
+read -p "Sisesta (oma) vanus:" vanus
+
+if [ $vanus -lt 11 ]
+
+then
+
+	echo "Oled laps"
+
+	elif test $vanus -ge 11 -a $vanus -lt 18
+
+	then
+		echo "Oled nooruk"
+
+		elif test $vanus -ge 18 -a $vanus -lt 63
+
+		then
+
+			echo "Oled täiskasvanu"
+
+			elif test $vanus -ge 63
+
+			then
+
+				echo "Oled Seenjor"
+
+fi
