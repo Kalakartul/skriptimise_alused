@@ -3,6 +3,8 @@
 
 read -p "Sisesta suvaline täisarv:" arv
 
+number=$arv
+
 summa=0
 
 while [ $arv -ne 0 ]
@@ -15,4 +17,4 @@ do
 
 done
 
-	echo "Nende arvude summa on $summa"
+	echo "Arvu $number numbrite summa on $summa"
