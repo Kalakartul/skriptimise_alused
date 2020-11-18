@@ -2,15 +2,23 @@
 #See skript liidab 10 esimese paarisarvu summa
 
 summa=0
-for (( arv=1; arv<11; arv++))
-do
-	jaak=$(( $arv % 2 ))
-	if[ $jaak -eq 0 ]
-then
-		summa=$(($summa + $arv))
-		echo $summa
-	fi
-done
-echo "Arvude vahemikus 1 kuni 10 (kaasaarvatud) paarisarvude summa on :$summa"
 
-#Ei saa praegu skripti tööle, liigun järgmise ülesande juurde ja tulen siia hiljem tagasi
+for (( arv=1; arv<11; arv++))
+
+do
+
+	jaak=$(( $arv % 2 ))
+
+if [ $jaak -eq 0 ]
+
+then
+
+		summa=$(($summa + $arv))
+
+		echo $summa
+
+	fi
+
+done
+
+echo "Arvude vahemikus 1 kuni 10 (kaasaarvatud) paarisarvude summa on :$summa"
