@@ -1,0 +1,36 @@
+#!/bin/bash
+#See skript ütleb kuu järgi aastaaja
+
+echo "Mitmes kuu on?"
+
+read kuu
+
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12
+
+then
+
+	echo "See kuu on talvel"
+
+elif test $kuu -ge 3 -a $kuu -le 5
+
+then
+
+	echo "See kuu on kevadel"
+
+elif test $kuu -ge 6 -a $kuu -le 8
+
+then
+
+	echo "See kuu on suvel"
+
+elif test $kuu -ge 9 -a $kuu -le 11
+
+then
+
+	echo "See kuu on sügisel"
+
+else
+
+	echo "Sellist kuud pole olemas"
+
+fi
