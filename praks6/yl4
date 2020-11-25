@@ -1,0 +1,21 @@
+#!/bin/bash
+#See skript ütleb kas arv on algarv või mitte
+
+echo "Sisesta täisarv:"
+read arv
+
+i=2
+
+while [ $i -lt $arv ]
+do
+
+	if [ $(($arv % $i)) -eq 0 ]
+	then
+		echo "$arv ei ole algarv"
+		echo "sest seda on võimalik jaga arvuga $i"
+	fi
+
+done
+
+echo "$arv on algarv"
+
